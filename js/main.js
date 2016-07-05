@@ -85,5 +85,6 @@
                 $cookies.putObject('sEspertoConfig', $scope.userConfig);
                 $scope.labels = config.labels[$scope.userConfig.lang] ? config.labels[$scope.userConfig.lang] : config.labels['en-US'];
             };
+            $scope.loaded = true;
 
     }]);
