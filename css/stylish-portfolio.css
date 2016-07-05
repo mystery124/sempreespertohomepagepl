@@ -31,6 +31,10 @@ body {
     color: #fff;
 }
 
+.moveRight {
+    padding-left: 10%;
+}
+
 .main-text-vertical-center {
     position: absolute;
     top: 50%;

@@ -37,8 +37,8 @@
                 FIND_OUT: "Dowiedz się trochę więcej",
                 OWN_NAME: "Stefan Abramiuk",
                 OWN_ABOUT: "Właściciel i założyciel Sempre Esperto",
-                OWN_DESC1: "Osoba z prawie 6 letnim doświadczeniem w platfromie Salesforce",
-                OWN_DESC2: "Jedna osoba która dostarczy kompleksowe usługi",
+                OWN_DESC1: "Posiada prawie 6 lat doświadczenia przy pracy na platfromie Salesforce",
+                OWN_DESC2: "Jedna osoba która dostarczy kompleksowe usługi w zakresie CRM",
                 SERV_TITLE: "Usługi które mogę zaoferować",
                 BUSIN_ANALYST: "Analityk Biznesowy",
                 TECH_ARCH: "Architekt Techniczny",
@@ -63,7 +63,7 @@
             SKYPE_LINK: "skype:abramiuk.stefan?chat",
             GPLUS_LINK: "https://plus.google.com/u/3/108473935326169165534?hl=pl"
         },
-        version : "ver 1.1"
+        version : "ver 1.2"
     };
 
     var myApp = angular.module('homepage',['ngCookies']);

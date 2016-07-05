@@ -6,13 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Salesforce experts">
+    <meta name="description" content="Complex CRM solutions with Salesforce platfomr">
     <meta name="author" content="Stefan Abramiuk">
+    <meta name="keywords" content="Salesforce, CRM, SFDC, Salesforce.com, Force.com, Force, salesforce, salesforce.com, force.com, heroku, sfdc, crm, apex, sales cloud, service cloud, marketing">
+
 
     <title>Sempre Esperto - Just briliant</title>
-<!--
+
     <link rel="icon" href="/img/expert.png">
--->
+
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -54,6 +56,9 @@
                 <a href="#about" onclick = $("#menu-close").click(); >{{ labels.ABOUT }}</a>
             </li>
             <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >{{ labels.OUR_WORK }}</a>
+            </li>
+            <li>
                 <a href="#contact" onclick = $("#menu-close").click(); >{{ labels.CONTACT }}</a>
             </li>
         </ul>
@@ -69,7 +74,7 @@
                 <span><a lang="pl" title="Polski" href="#" ng-click="setLang('pl');" ng-class="{'langActive': userConfig.lang == 'pl'}">PL</a> </span>
             </div>
             <div class="col-md-6 col-lg-6 col-md-offset-2 col-lg-offset-2 v100h">
-                <div class="main-text-vertical-center">
+                <div class="main-text-vertical-center moveRight">
                     <h1>{{ labels.NAME }}</h1>
                     <h4>{{ labels.JUST_HERE }}</h4>
                     <h3>{{ labels.JUST_NOW }}</h3>
@@ -224,17 +229,16 @@
     <!-- Map -->
     <section id="contact" >
         <div class="container">
-            <div class="row">
-                <div class="flexible-container">
-                    <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.35473731864!2d20.92111269765835!3d52.233065220886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1spl!2spl!4v1466588178919" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div >
+                <div class="t text-center">
+                    <h2>{{ labels.CONTACT }}</h2>
                 </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
+            </div>
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <div class="col-lg-7 col-sm-7 col-xs-7 col-md-7">
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.35473731864!2d20.92111269765835!3d52.233065220886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1spl!2spl!4v1466588178919" width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-5 col-sm-5 col-xs-5 col-md-5 text-center">
                     <h4><strong>{{ labels.FULL_NAME }}</strong>
                     </h4>
                     <p>{{ labels.ADDR1 }}<br>{{ labels.ADDR2 }}</p>
@@ -258,7 +262,16 @@
                             <a ng-href="{{ links.GPLUS_LINK }}"><i class="fa fa-google-plus-square fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
-                    <hr class="small">
+                </div>
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center ">
                     <p class="text-muted">{{ labels.COPYRIGHT }}</p>
                     <p class="text-muted">{{ version }}</p>
                 </div>
