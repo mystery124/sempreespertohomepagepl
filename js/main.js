@@ -61,9 +61,9 @@
             FB_LINK : "https://pl-pl.facebook.com/people/Stefan-Abramiuk/100010261149125",
             LINKED_LINK: "https://www.linkedin.com/in/stefan-abramiuk-95827b43?trk=hp-identity-name",
             SKYPE_LINK: "skype:abramiuk.stefan?chat",
-            GPLUS_LINK: "https://plus.google.com/u/3/108473935326169165534?hl=pl"
+            GPLUS_LINK: "https://plus.google.com/u/3/108473935326169165534"
         },
-        version : "ver 1.2"
+        version : "ver 1.3"
     };
 
     var myApp = angular.module('homepage',['ngCookies']);
