@@ -7,7 +7,7 @@ ul.social-network {
 }
 ul.social-network li {
     display: inline;
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 
@@ -57,16 +57,39 @@ a.socialIcon:hover, .socialHoverClass {
 }
 
 .social-circle li a:hover i, .triggeredHover {
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -ms--transform: rotate(360deg);
-    transform: rotate(360deg);
+    -moz-transform: rotate(360deg) scale(1.6);
+    -webkit-transform: rotate(360deg) scale(1.6);
+    -ms--transform: rotate(360deg) scale(1.6);
+    transform: rotate(360deg) scale(1.6);
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
     -ms-transition: all 0.2s;
     transition: all 0.2s;
 }
+
+.social-circle li a:hover {
+    -moz-transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    -ms--transform:  scale(1.6);
+    transform: scale(1.6);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+
+}
+
+.social-circle li a {
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+
+}
+
 .social-circle i {
     color: #fff;
     -webkit-transition: all 0.8s;
