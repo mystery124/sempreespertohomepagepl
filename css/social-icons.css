@@ -7,7 +7,7 @@ ul.social-network {
 }
 ul.social-network li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 
@@ -78,7 +78,7 @@ a.socialIcon:hover, .socialHoverClass {
     -o-transition: all 0.2s;
     -ms-transition: all 0.2s;
     transition: all 0.2s;
-
+    z-index:555555; 
 }
 
 .social-circle li a {
