@@ -26,7 +26,9 @@
                 ABOUT: "About",
                 CONTACT: "Contact",
                 HOME: "Home",
-                DISCOVER: "Discover"
+                DISCOVER: "Discover",
+                COOKIE_CONSENT: "This website uses cookies but only to ensure you get the best experience on our website",
+                CONFIRM: "Confirm"
             },
             'pl': {
                 TITLE : "Sempre Esperto - Just briliant",
@@ -53,7 +55,10 @@
                 ABOUT: "O mnie",
                 CONTACT: "Kontakt",
                 HOME: "Na górę",
-                DISCOVER: "Odkrywaj"
+                DISCOVER: "Odkrywaj",
+                COOKIE_CONSENT: 'Ta strona używa plików "cookie" ale tylko w celu poprawy jakości doznań użytkownika',
+                CONFIRM: "Zgadzam się"
+
             },
         },
         links : {
@@ -69,7 +74,9 @@
     var myApp = angular.module('homepage',['ngCookies']);
 
     myApp.controller('HomePageController', ['$scope', '$cookies', '$window', function($scope, $cookies, $window) {
+            $scope.cookieConsent = $cookies.get('consent');
             $scope.userConfig = $cookies.getObject('sEspertoConfig');
+            $scope.cookieConsConfirmed = false;
             if(!$scope.userConfig){
                 var lang = $window.navigator.language || $window.navigator.userLanguage;
                 $scope.userConfig = {'lang': lang};
@@ -87,4 +94,8 @@
             };
             $scope.loaded = true;
 
+            $scope.confirmCookie = function(){
+                $scope.cookieConsConfirmed = true;
+                $cookies.put('consent', true);
+            }
     }]);

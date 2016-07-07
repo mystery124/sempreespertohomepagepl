@@ -44,11 +44,11 @@
         <img id="loading" src="img/loading4.gif">
     </div>
 
-    <div class="cc_banner-wrapper">
-        <div class="cc_banner cc_container cc_container--open">
-            <a href="#" data-cc-event="click:dismiss" target="_blank" class="cc_btn cc_btn_accept_all">Got it!</a>
+    <div class="cc_banner-wrapper" ng-if="!cookieConsent">
+        <div class="cc_banner cc_container cc_container--open" ng-class="{'fadeIn': !cookieConsConfirmed, 'fadeOut': cookieConsConfirmed}">
+            <a ng-click="confirmCookie();" class="cc_btn cc_btn_accept_all">{{ labels.CONFIRM }}</a>
 
-            <p class="cc_message">This website uses cookies to ensure you get the best experience on our website</p>
+            <p class="cc_message" >{{ labels.COOKIE_CONSENT }}</p>
             <a class="cc_logo" target="_blank" href="http://silktide.com/cookieconsent">Cookie Consent plugin for the EU cookie law</a>
         </div>
     </div>
