@@ -28,7 +28,8 @@
                 HOME: "Home",
                 DISCOVER: "Discover",
                 COOKIE_CONSENT: "This website uses cookies only to ensure you get the best experience on our website",
-                CONFIRM: "Confirm"
+                SEE_MORE: 'See more',
+                CONFIRM: "OK"
             },
             'pl': {
                 TITLE : "Sempre Esperto - Just briliant",
@@ -57,7 +58,8 @@
                 HOME: "Na górę",
                 DISCOVER: "Odkrywaj",
                 COOKIE_CONSENT: 'Ta strona używa plików "cookie" wyłącznie w celu poprawy jakości doznań użytkownika',
-                CONFIRM: "Zgadzam się"
+                SEE_MORE: 'Zobacz więcej',
+                CONFIRM: "OK"
 
             },
         },
