@@ -82,13 +82,15 @@
     <header id="top" class="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-1 col-lg-1 langSelector">
+                <div class="col-md-1 col-lg-1 col-sm-1 col-xs-1 langSelector">
                     <span><a lang="en" title="English" href="#" ng-click="setLang('en-US');" ng-class="{'langActive': userConfig.lang == 'en-US'}">EN</a> </span>
                     |
                     <span><a lang="pl" title="Polski" href="#" ng-click="setLang('pl');" ng-class="{'langActive': userConfig.lang == 'pl'}">PL</a> </span>
                 </div>
-                <div class="col-md-6 col-lg-6 col-md-offset-2 col-lg-offset-2 v100h">
-                    <div class="main-text-vertical-center moveRight">
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 col-md-offset-3 col-lg-offset-3 col-xs-offset-3 col-xs-offset-3 v100h">
+                    <div class="main-text-vertical-center">
                         <h1>{{ labels.NAME }}</h1>
                         <h4>{{ labels.JUST_HERE }}</h4>
                         <h3>{{ labels.JUST_NOW }}</h3>
@@ -117,23 +119,23 @@
                     <div class="col-md-3 col-lg-3">
                         <div class="row" >
                             <div class="col-md-6 col-lg-6">
-                                <a href="res/Salesforce_Certified_Force.com_Developer.pdf">
-                                    <img class=" img-responsive" src="img/cert_dev_rgb.jpg">
+                                <a href="res/Salesforce_Certified_Force.com_Developer.pdf" target="_blank">
+                                    <img class="img-responsive" src="img/cert_dev_rgb.jpg">
                                 </a>
                             </div>
                             <div class="col-md-6 col-lg-6">
-                                <a href="res/Salesforce_Certified_Advanced_Developer.pdf">
-                                    <img class=" img-responsive" src="img/cert_dev_adv_rgb.jpg">
+                                <a href="res/Salesforce_Certified_Advanced_Developer.pdf" target="_blank">
+                                    <img class="img-responsive" src="img/cert_dev_adv_rgb.jpg">
                                 </a>
                             </div>
                             <div class="col-md-6 col-lg-6">
-                                <a href="res/Salesforce_Certified_Advanced_Developer.pdf">
-                                    <img class=" img-responsive" src="img/ocp.jpg">
+                                <a href="#about" target="_blank">
+                                    <img class="img-responsive"  src="img/ocp.jpg">
                                 </a>
                             </div>
                              <div class="col-md-6 col-lg-6">
-                                <a href="https://developer.salesforce.com/forums/ForumsTrailheadProfile?userId=005F0000006vuRRIAY">
-                                    <img class=" img-responsive" src="img/trailhead-flogo.png">
+                                <a href="https://developer.salesforce.com/forums/ForumsTrailheadProfile?userId=005F0000006vuRRIAY" target="_blank">
+                                    <img class="img-responsive" src="img/trailhead-flogo.png">
                                 </a>
                             </div>
                         </div>
@@ -264,15 +266,15 @@
                         <p>{{ labels.ADDR1 }}<br>{{ labels.ADDR2 }}</p>
                         <ul class="list-unstyled">
                             <li>
-                                <i class="fa fa-envelope-o fa-fw"></i><a class="mail" ng-href="mailto:{{ links.EMAIL }}">{{ links.EMAIL }}</a>
+                                <i class="fa fa-envelope-o fa-fw"></i><a class="mail" target="_blank" ng-href="mailto:{{ links.EMAIL }}">{{ links.EMAIL }}</a>
                             </li>
                         </ul>
                         <br>
                         <ul class="social-network social-circle">
-                            <li><a ng-href="{{ links.FB_LINK }}" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a ng-href="{{ links.SKYPE_LINK }}" class="icoSkype" title="Twitter"><i class="fa fa-skype"></i></a></li>
-                            <li><a ng-href="{{ links.GPLUS_LINK }}" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a ng-href="{{ links.LINKED_LINK }}" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a ng-href="{{ links.FB_LINK }}" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a ng-href="{{ links.SKYPE_LINK }}" target="_blank" class="icoSkype" title="Twitter"><i class="fa fa-skype"></i></a></li>
+                            <li><a ng-href="{{ links.GPLUS_LINK }}" target="_blank" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a ng-href="{{ links.LINKED_LINK }}" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin-square"></i></a></li>
                         </ul>
                     </div>
 
