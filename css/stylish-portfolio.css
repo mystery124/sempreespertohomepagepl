@@ -15,9 +15,10 @@ body {
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-    .group-item-noborder{
-        border: 0;
-    }
+
+.group-item-noborder{
+    border: 0;
+}
 
 #overlay {
     position: absolute;
@@ -309,10 +310,8 @@ div.v100h{
     height: 100vh;
 }
 
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
+a.mail {
+    word-wrap: break-word;
 }
 
 /* Footer */

@@ -15,6 +15,9 @@ ul.social-network li {
 .social-network a.icoRss:hover {
     background-color: #F56505;
 }
+.social-network a.icoMail:hover {
+    background-color:#3B5998;
+}
 .social-network a.icoFacebook:hover {
     background-color:#3B5998;
 }
@@ -32,7 +35,7 @@ ul.social-network li {
 }
 .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoSkype:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i,
-a.icoGoogle:focus i {
+.social-network a.icoMail:hover i {
     color:#fff;
 }
 a.socialIcon:hover, .socialHoverClass {
