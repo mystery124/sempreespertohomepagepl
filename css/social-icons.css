@@ -21,7 +21,7 @@ ul.social-network li {
 .social-network a.icoSkype:hover {
     background-color:#33ccff;
 }
-.social-network a.icoGoogle:hover {
+.social-network a.icoGoogle:hover, a.icoGoogle:focus {
     background-color:#BD3518;
 }
 .social-network a.icoVimeo:hover {
@@ -31,7 +31,8 @@ ul.social-network li {
     background-color:#007bb7;
 }
 .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoSkype:hover i,
-.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i,
+a.icoGoogle:focus i {
     color:#fff;
 }
 a.socialIcon:hover, .socialHoverClass {
@@ -56,7 +57,7 @@ a.socialIcon:hover, .socialHoverClass {
     text-align: center;
 }
 
-.social-circle li a:hover i, .triggeredHover {
+.social-circle li a:hover i, .social-circle li a:focus i, .triggeredHover {
     -moz-transform: rotate(360deg) scale(1.6);
     -webkit-transform: rotate(360deg) scale(1.6);
     -ms--transform: rotate(360deg) scale(1.6);
@@ -68,7 +69,7 @@ a.socialIcon:hover, .socialHoverClass {
     transition: all 0.2s;
 }
 
-.social-circle li a:hover {
+.social-circle li a:hover, .social-circle li a:focus {
     -moz-transform: scale(1.6);
     -webkit-transform: scale(1.6);
     -ms--transform:  scale(1.6);
