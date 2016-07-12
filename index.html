@@ -11,7 +11,7 @@
     <meta name="keywords" content="Salesforce, CRM, SFDC, Salesforce.com, Force.com, Force, salesforce, salesforce.com, force.com, heroku, sfdc, crm, apex, sales cloud, service cloud, marketing">
 
 
-    <title>Sempre Esperto - Just briliant</title>
+    <title>Sempre Esperto - Just brilliant</title>
 
     <link rel="icon" href="/img/expert.png">
 
@@ -82,7 +82,7 @@
     <header id="top" class="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-1 col-lg-1 col-sm-1 col-xs-1 langSelector">
+                <div class="col-md-1 col-lg-1 col-sm-12 col-xs-12 langSelector">
                     <span><a lang="en" title="English" href="#" ng-click="setLang('en-US');" ng-class="{'langActive': userConfig.lang == 'en-US'}">EN</a> </span>
                     |
                     <span><a lang="pl" title="Polski" href="#" ng-click="setLang('pl');" ng-class="{'langActive': userConfig.lang == 'pl'}">PL</a> </span>
@@ -94,7 +94,7 @@
                         <h1>{{ labels.NAME }}</h1>
                         <h4>{{ labels.JUST_HERE }}</h4>
                         <h3>{{ labels.JUST_NOW }}</h3>
-                        <h2>{{ labels.JUST_BRILIANT }}</h2>
+                        <h2>{{ labels.JUST_BRILLIANT }}</h2>
                         <br>
                         <a href="#about" class="btn btn-dark btn-lg">{{ labels.FIND_OUT }}</a>
                     </div>
@@ -129,7 +129,7 @@
                                 </a>
                             </div>
                             <div class="col-md-6 col-lg-6">
-                                <a href="#about" target="_blank">
+                                <a href="res/OCP.pdf" target="_blank">
                                     <img class="img-responsive"  src="img/ocp.jpg">
                                 </a>
                             </div>
@@ -205,6 +205,7 @@
                                 </div>
                             </div>
                         </div>
+                        <h2>{{ labels.MORE_SOON }}</h2>
                         <!-- /.row (nested) -->
                     </div>
                     <!-- /.col-lg-10 -->
@@ -270,6 +271,14 @@
                             </li>
                         </ul>
                         <br>
+                        <ul class="social-network social-circle visible-md-inline visible-lg-inline .hidden-xs .hidden-sm">
+                            <li><a ng-href="{{ links.FB_LINK }}" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a ng-href="{{ links.SKYPE_LINK }}" target="_blank" class="icoSkype" title="Twitter"><i class="fa fa-skype"></i></a></li>
+                            <li><a ng-href="{{ links.GPLUS_LINK }}" target="_blank" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a ng-href="{{ links.LINKED_LINK }}" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin-square"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 visible-xs-block visible-sm-block text-center .hidden-md .hidden-lg">
                         <ul class="social-network social-circle">
                             <li><a ng-href="{{ links.FB_LINK }}" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                             <li><a ng-href="{{ links.SKYPE_LINK }}" target="_blank" class="icoSkype" title="Twitter"><i class="fa fa-skype"></i></a></li>
@@ -277,8 +286,6 @@
                             <li><a ng-href="{{ links.LINKED_LINK }}" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin-square"></i></a></li>
                         </ul>
                     </div>
-
-
         </section>
 
         <!-- Footer -->

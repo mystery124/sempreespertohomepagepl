@@ -6,7 +6,7 @@
                 NAME: "Sempre Esperto",
                 JUST_HERE: "Just Here",
                 JUST_NOW: "Just Now",
-                JUST_BRILIANT: "Just Briliant",
+                JUST_BRILLIANT: "Just Brilliant",
                 FIND_OUT: "Find Out Little More",
                 OWN_NAME: "Stefan Abramiuk",
                 OWN_ABOUT: "Owner and Founder of Sempre Esperto",
@@ -29,14 +29,15 @@
                 DISCOVER: "Discover",
                 COOKIE_CONSENT: "This website uses cookies only to ensure you get the best experience on our website",
                 SEE_MORE: 'See more',
-                CONFIRM: "OK"
+                CONFIRM: "OK",
+                MORE_SOON: "More soon..."
             },
             'pl': {
                 TITLE : "Sempre Esperto - Just briliant",
                 NAME: "Sempre Esperto",
                 JUST_HERE: "Po prostu tutaj",
                 JUST_NOW: "Po prostu teraz",
-                JUST_BRILIANT: "Po prostu genialne",
+                JUST_BRILLIANT: "Po prostu genialne",
                 FIND_OUT: "Dowiedz się trochę więcej",
                 OWN_NAME: "Stefan Abramiuk",
                 OWN_ABOUT: "Właściciel i założyciel Sempre Esperto",
@@ -59,7 +60,8 @@
                 DISCOVER: "Odkrywaj",
                 COOKIE_CONSENT: 'Ta strona używa plików "cookie" wyłącznie w celu poprawy jakości doznań użytkownika',
                 SEE_MORE: 'Zobacz więcej',
-                CONFIRM: "OK"
+                CONFIRM: "OK",
+                MORE_SOON: "Więcej wkrótce..."
 
             },
         },
