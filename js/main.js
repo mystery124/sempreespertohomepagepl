@@ -27,7 +27,7 @@
                 CONTACT: "Contact",
                 HOME: "Home",
                 DISCOVER: "Discover",
-                COOKIE_CONSENT: "This website uses cookies only to ensure you get the best experience on our website",
+                COOKIE_CONSENT: "This website uses cookies for statistical, advertising and functional we provide anonymised tracking data to third party applications like Google Analytics. Thanks to them, we can customize the site to your needs. Anyone can accept cookies, or has the ability to disable them in your browser, so you will not be collected any information.",
                 SEE_MORE: 'See more',
                 CONFIRM: "OK",
                 MORE_SOON: "More soon..."
@@ -58,7 +58,7 @@
                 CONTACT: "Kontakt",
                 HOME: "Na górę",
                 DISCOVER: "Odkrywaj",
-                COOKIE_CONSENT: 'Ta strona używa plików "cookie" wyłącznie w celu poprawy jakości doznań użytkownika',
+                COOKIE_CONSENT: 'Nasza strona internetowa używa plików cookies (tzw. ciasteczka) w celach statystycznych, reklamowych oraz funkcjonalnych udostępniamy też anonimowe dane dla usług takich jak Google Analytics. Dzięki nim możemy indywidualnie dostosować stronę do twoich potrzeb. Każdy może zaakceptować pliki cookies albo ma możliwość wyłączenia ich w przeglądarce, dzięki czemu nie będą zbierane żadne informacje.',
                 SEE_MORE: 'Zobacz więcej',
                 CONFIRM: "OK",
                 MORE_SOON: "Więcej wkrótce..."

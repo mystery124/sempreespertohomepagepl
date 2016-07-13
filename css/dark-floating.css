@@ -100,9 +100,16 @@
         padding-bottom: 87px
     }
     .cc_container .cc_message {
-        font-size: 1em
+        font-size: 0.9em;
     }
 }
+
+.cc_message {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 0.9em;
+}
+
 .cc_container {
     background: #222;
     color: #fff;
