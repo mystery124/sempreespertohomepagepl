@@ -315,6 +315,10 @@ a.mail {
     word-wrap: break-word;
 }
 
+.row{
+    margin: auto
+}
+
 /* Footer */
 
 footer {
