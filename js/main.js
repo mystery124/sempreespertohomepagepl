@@ -102,7 +102,7 @@
             SKYPE_LINK: "skype:abramiuk.stefan?chat",
             GPLUS_LINK: "https://plus.google.com/u/3/108473935326169165534"
         },
-        version : "ver 1.3"
+        version : "ver 1.3.1"
     };
 
     var myApp = angular.module('homepage',['ngCookies']);
