@@ -108,7 +108,8 @@
     var myApp = angular.module('homepage',['ngCookies']);
 
     myApp.controller('HomePageController', ['$scope', '$cookies', '$window', function($scope, $cookies, $window) {
-            var expiryDate = null;//new Date().setFullYear(2030);
+            var expiryDate = new Date();
+            expiryDate.setFullYear(2030);
             $scope.cookieConsent = $cookies.get('consent');
             $scope.userConfig = $cookies.getObject('sEspertoConfig');
             $scope.cookieConsConfirmed = false;
