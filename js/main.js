@@ -102,19 +102,21 @@
             SKYPE_LINK: "skype:abramiuk.stefan?chat",
             GPLUS_LINK: "https://plus.google.com/u/3/108473935326169165534"
         },
-        version : "ver 1.3.1"
+        version : "ver 1.4.0"
     };
 
     var myApp = angular.module('homepage',['ngCookies']);
 
     myApp.controller('HomePageController', ['$scope', '$cookies', '$window', function($scope, $cookies, $window) {
+            var expiryDate = new Date();
+            expiryDate.setFullYear(2030);
             $scope.cookieConsent = $cookies.get('consent');
             $scope.userConfig = $cookies.getObject('sEspertoConfig');
             $scope.cookieConsConfirmed = false;
             if(!$scope.userConfig){
                 var lang = $window.navigator.language || $window.navigator.userLanguage;
                 $scope.userConfig = {'lang': lang};
-                $cookies.putObject('sEspertoConfig', $scope.userConfig);
+                $cookies.putObject('sEspertoConfig', $scope.userConfig, { expires: expiryDate });
             }
 
             $scope.labels = config.labels[$scope.userConfig.lang] ? config.labels[$scope.userConfig.lang] : config.labels['en-US'];
@@ -130,6 +132,6 @@
 
             $scope.confirmCookie = function(){
                 $scope.cookieConsConfirmed = true;
-                $cookies.put('consent', true);
+                $cookies.put('consent', true, { expires: expiryDate });
             }
     }]);
