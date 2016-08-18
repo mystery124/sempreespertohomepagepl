@@ -25,6 +25,8 @@
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="css/dark-floating.css" rel="stylesheet">
     <link href="css/social-icons.css" rel="stylesheet">
+    <link href="css/videoOverlay.css" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -81,7 +83,10 @@
 
 
     <!-- Header -->
-    <header id="top" class="header">
+    <header id="top" class="header content-section video-section">
+
+  <div class="pattern-overlay">
+    <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=bv84wiX_MeU',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-lg-2 col-sm-12 col-xs-12 langSelector">
@@ -105,6 +110,7 @@
                 </div>
             </div>
         </div>
+  </div>
     </header>
 
         <!-- About -->
@@ -124,17 +130,27 @@
                         <div class="row" >
                             <div class="col-md-6 col-lg-6 achivements">
                                 <a href="res/Salesforce_Certified_Force.com_Developer.pdf" target="_blank">
-                                    <img class="img-responsive" src="img/cert_dev_rgb.jpg">
+                                    <img class="img-responsive" src="img/cert_dev_rgb.png">
                                 </a>
                             </div>
                             <div class="col-md-6 col-lg-6 achivements">
                                 <a href="res/Salesforce_Certified_Advanced_Developer.pdf" target="_blank">
-                                    <img class="img-responsive" src="img/cert_dev_adv_rgb.jpg">
+                                    <img class="img-responsive" src="img/cert_dev_adv_rgb.png">
                                 </a>
                             </div>
                             <div class="col-md-6 col-lg-6 achivements">
                                 <a href="res/Salesforce_Certified_Administrator.pdf" target="_blank">
-                                    <img class="img-responsive" src="img/cert_admin_rgb.jpg">
+                                    <img class="img-responsive" src="img/cert_admin_rgb.png">
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-6 achivements">
+                                <a href="res/Salesforce_Certified_Platform_Developer_I_II.pdf" target="_blank">
+                                    <img class="img-responsive" src="img/SalesforceCertifiedPlatformDeveloperI_RGB.png">
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-6 achivements">
+                                <a href="res/Salesforce_Certified_Platform_Developer_I_II.pdf" target="_blank">
+                                    <img class="img-responsive" src="img/SalesforceCertifiedPlatformDeveloperII_RGB.png">
                                 </a>
                             </div>
                             <div class="col-md-6 col-lg-6 achivements">
@@ -326,6 +342,9 @@
     <script src="js/gOOgle.js"></script>
 
     <script src="js/sidebar.js"></script>
+
+    <script src="js/jquery_mb_YTPlayer.js"></script>
+    <script src="js/video.js"></script>
 
     <script src="js/main.js"></script>
 
