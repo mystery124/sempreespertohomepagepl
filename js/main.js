@@ -106,6 +106,10 @@
     };
 
     var myApp = angular.module('homepage',['ngCookies']);
+    
+    myApp.config( ['$compileProvider',function( $compileProvider ){
+          $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|skype):/);
+    }]);
 
     myApp.controller('HomePageController', ['$scope', '$cookies', '$window', function($scope, $cookies, $window) {
             var expiryDate = new Date();
