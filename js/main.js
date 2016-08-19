@@ -102,10 +102,14 @@
             SKYPE_LINK: "skype:abramiuk.stefan?chat",
             GPLUS_LINK: "https://plus.google.com/u/3/108473935326169165534"
         },
-        version : "ver 1.4.0"
+        version : "ver 1.4.1"
     };
 
     var myApp = angular.module('homepage',['ngCookies']);
+    
+    myApp.config( ['$compileProvider',function( $compileProvider ){
+          $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|skype):/);
+    }]);
 
     myApp.controller('HomePageController', ['$scope', '$cookies', '$window', function($scope, $cookies, $window) {
             var expiryDate = new Date();

@@ -25,4 +25,7 @@
                 }
             }
         });
+
+         $(".player").mb_YTPlayer();
+
     });
