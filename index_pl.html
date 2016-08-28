@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Salesforce, SFDC, oprogramowanie, dla firm, CRM, ekspert, Sales, chmura, salesforce.com">
-    <meta name="author" content="Stefan Abramiuk">
+    <meta name="author" content="Stefan Abramiuk Sempre Esperto">
     <meta name="keywords" content="Salesforce, CRM, SFDC, Salesforce.com, Force.com, Force, salesforce, salesforce.com, force.com, heroku, sfdc, crm, apex, sales cloud, service cloud, marketing">
     <meta name="google-site-verification" content="hKsxCh5-aU2ON6latLC3D_RdhkB5ALLHmJwVzj3md3c" />
 
@@ -42,7 +42,10 @@
 </head>
 
 <body ng-app="homepage" ng-controller="HomePageController as ctrl">
-    <div ng-cloak ng-show="loaded">
+    <div id="overlay" class="animateShow" ng-hide="loaded">
+        <img id="loading" src="img/loading4.gif">
+    </div>
+    <div ng-show="loaded">
 
          <!-- Navigation -->
         <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -68,7 +71,7 @@
         </nav>
 
         <!-- Header -->
-        <header id="top" class="header content-section video-section">
+        <header id="top" class="header content-section video-section" show-once-background-loaded="./img/clouds.jpg">
             <div class="pattern-overlay">
                 <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=bv84wiX_MeU',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
                 <div class="container">
@@ -334,9 +337,7 @@
         </footer>
 
     </div>
-    <div id="overlay" ng-hide="loaded">
-        <img id="loading" src="img/loading4.gif">
-    </div>
+
 
     <div class="cc_banner-wrapper" ng-if="!cookieConsent">
         <div class="cc_banner cc_container cc_container--open" ng-class="{'fadeIn': !cookieConsConfirmed, 'fadeOut': cookieConsConfirmed}">
@@ -359,6 +360,7 @@
         <!-- angular JavaScript -->
     <script src="js/angular.min.js"></script>
     <script src="js/angular-cookies.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
 
     <script src="js/gOOgle.js"></script>
 

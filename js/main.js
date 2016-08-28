@@ -43,7 +43,7 @@
         version : "ver 1.4.1"
     };
 
-    var myApp = angular.module('homepage',['ngCookies']);
+    var myApp = angular.module('homepage',['ngCookies', 'ngAnimate']);
     
     myApp.config( ['$compileProvider',function( $compileProvider ){
           $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|skype):/);
@@ -59,10 +59,28 @@
             $scope.links = config.links;
             $scope.version = config.version;
 
-            $scope.loaded = true;
-
             $scope.confirmCookie = function(){
                 $scope.cookieConsConfirmed = true;
                 $cookies.put('consent', true, { expires: expiryDate });
             }
+    }]);
+
+    myApp.directive("showOnceBackgroundLoaded", [function () {
+      return {
+        restrict: "A",
+        scope: false,
+        link: function (scope, element, attributes) {
+          element.addClass("ng-hide");
+          var image = new Image();
+          image.onload = function () {
+            // the image must have been cached by the browser, so it should load quickly
+            scope.$apply(function () {
+              element.css({ background: 'url("' + attributes.showOnceBackgroundLoaded + '") no-repeat center center scroll' });
+              element.removeClass("ng-hide");
+              scope.loaded = true;
+            });
+          };
+          image.src = attributes.showOnceBackgroundLoaded;
+        }
+      };
     }]);
