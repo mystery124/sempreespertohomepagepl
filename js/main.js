@@ -43,7 +43,7 @@
         version : "ver 1.4.1"
     };
 
-    var myApp = angular.module('homepage',['ngCookies', 'ngAnimate']);
+    var myApp = angular.module('homepage',['ngCookies', 'ngAnimate', 'angular-parallax']);
     
     myApp.config( ['$compileProvider',function( $compileProvider ){
           $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|skype):/);
@@ -85,3 +85,16 @@
         }
       };
     }]);
+
+    myApp.directive('scroll', function($window) {
+        return {
+            restrict: 'A',
+            scope: {
+                scrollPosition: "="
+            },
+            link: function(scope, element, attr) {
+                angular.element($window).bind("scroll", function() {
+                    scope.scrollPosition = this.pageYOffset;
+                });
+            }
+    }});
