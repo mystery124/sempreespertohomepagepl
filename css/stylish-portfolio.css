@@ -204,6 +204,10 @@ hr.small {
 /* Header */
 
 .header {
+
+}
+
+.headerBackgroud{
     display: table;
     position: relative;
     width: 100%;

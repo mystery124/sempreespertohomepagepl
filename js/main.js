@@ -75,7 +75,8 @@
           image.onload = function () {
             // the image must have been cached by the browser, so it should load quickly
             scope.$apply(function () {
-              element.css({ background: 'url("' + attributes.showOnceBackgroundLoaded + '") no-repeat center center scroll' });
+              //element.css({ background: 'url("' + attributes.showOnceBackgroundLoaded + '") no-repeat center center scroll' });
+              element.addClass('headerBackgroud');
               element.removeClass("ng-hide");
               scope.loaded = true;
             });
