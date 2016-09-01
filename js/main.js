@@ -40,7 +40,7 @@
             SKYPE_LINK: "skype:abramiuk.stefan?chat",
             GPLUS_LINK: "https://plus.google.com/u/3/108473935326169165534"
         },
-        version : "ver 1.4.1"
+        version : "ver 1.4.3"
     };
 
     var myApp = angular.module('homepage',['ngCookies', 'ngAnimate', 'angular-parallax']);
@@ -85,16 +85,3 @@
         }
       };
     }]);
-
-    myApp.directive('scroll', function($window) {
-        return {
-            restrict: 'A',
-            scope: {
-                scrollPosition: "="
-            },
-            link: function(scope, element, attr) {
-                angular.element($window).bind("scroll", function() {
-                    scope.scrollPosition = this.pageYOffset;
-                });
-            }
-    }});
