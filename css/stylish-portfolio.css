@@ -25,10 +25,10 @@ body {
 #loading {
     width: 100px;
     height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -28px 0 0 -50px;
+}
+
+.loadingOverlay{
+    color: grey;
 }
 
 
@@ -381,7 +381,11 @@ footer {
     bottom: 0;
     right: 0;
     background: #000;
-    opacity: 1;
+    opacity: 0.6;
     z-index: 9999999;
     transition: all linear 1s;
+}
+
+.loadingOverlay .main-text-vertical-center{
+    top: 46%;
 }
