@@ -266,6 +266,7 @@ hr.small {
 
 .portfolio {
     padding: 50px 0;
+    background-color: #f8f8f8;
 }
 
 .portfolio-item {
@@ -389,3 +390,25 @@ footer {
 .loadingOverlay .main-text-vertical-center{
     top: 46%;
 }
+
+.sfdc {
+    color: ivory;
+}
+
+.sfdc h2{
+    font-size: 5em;
+}
+
+.sfdc li {
+    font-size: 3em;
+    background-color: rgba(95, 158, 160, 0.5);
+    padding: 0.6em;
+    margin: 0.6em;
+    border-radius: 25px;
+}
+
+.sfdc ul{
+    list-style-type: none;
+}
+
+.triggeredCSS3    {transform : rotate(360deg); }
