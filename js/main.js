@@ -43,7 +43,7 @@
         version : "ver 1.5.1"
     };
 
-    var myApp = angular.module('homepage',['ngCookies', 'ngAnimate', 'angular-parallax']);
+    var myApp = angular.module('homepage',['ngCookies', 'ngAnimate', 'angular-parallax', 'angular-inview']);
     
     myApp.config( ['$compileProvider',function( $compileProvider ){
           $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|mailto|skype):/);
@@ -62,6 +62,12 @@
             $scope.confirmCookie = function(){
                 $scope.cookieConsConfirmed = true;
                 $cookies.put('consent', true, { expires: expiryDate });
+            }
+
+            $scope.visible = function(id, inview, inviewpart){
+                console.log(id);
+                console.log(inview);
+                console.log(inviewpart);
             }
     }]);
 

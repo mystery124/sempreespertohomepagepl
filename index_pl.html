@@ -82,9 +82,9 @@
         </nav>
 
         <!-- Header -->
-        <header id="top" class="header content-section video-section" show-once-background-loaded="./img/clouds.jpg">
+        <header id="top" class="header content-section video-section" show-once-background-loaded="./img/raw1.png">
             <div class="pattern-overlay">
-                <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=bv84wiX_MeU',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+                <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=18tyvtWA5G4',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2 col-lg-2 col-sm-12 col-xs-12 langSelector">
@@ -112,23 +112,21 @@
         </header>
 
         <!-- sfdc -->
-        <section id="sfdc" class="sfdc" parallax-background parallax-vertical-offset="1000" parallax-ratio="0.2">
+        <section id="sfdc" class="sfdc" >
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 ">
+                    <div class="col-md-12">
                         <h2 class="text-center">Czym się zajmujemy?</h2>
                         <hr class="small">
-                        <div class="row">
-                            <div class="col-md-12">
+
                                 <div class="portfolio-item">
-                                    <ul>
-                                        <li class="tee">Dostarczamy oprogramowanie CRM dostowane do wymagań klienta</li>
-                                        <li class="tee">Doradzamy oraz pomagamy wybrać najlesze podejście</li>
-                                        <li class="tee">Prowadzimy szkolenia w zakresie wykorzystania rozwiązań CRM</li>
+                                    <ul >
+                                        <li in-view="visible(1, $inview, $inviewpart)">Dostarczamy oprogramowanie CRM dostowane do wymagań klienta</li>
+                                        <li in-view="visible(2, $inview, $inviewpart)">Doradzamy oraz pomagamy wybrać najlesze podejście</li>
+                                        <li in-view="visible(3, $inview, $inviewpart)">Prowadzimy szkolenia w zakresie wykorzystania rozwiązań CRM</li>
                                     </ul>
                                 </div>
-                            </div>
-                        </div>
+   
                     </div>
                 </div>
             </div>
@@ -422,6 +420,7 @@
     <script src="js/angular-cookies.min.js"></script>
     <script src="js/angular-animate.min.js"></script>
     <script src="js/angular-parallax.js"></script>
+    <script src="js/angular-inview.js"></script>
 
     <script src="js/gOOgle.js"></script>
 
@@ -431,7 +430,7 @@
     <script src="js/video.js"></script>
 
     <script src="js/main.js"></script>
+
     <script src="js/pl.js"></script>
-    <script src="js/inviewport.js"></script>
 
 </html>

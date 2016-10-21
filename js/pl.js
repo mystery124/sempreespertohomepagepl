@@ -4,7 +4,7 @@
             JUST_HERE: "Po prostu tutaj",
             JUST_NOW: "Po prostu teraz",
             JUST_BRILLIANT: "Po prostu genialne",
-            FIND_OUT: "Dowiedz się trochę więcej",
+            FIND_OUT: "Dowiedz się więcej",
             OWN_NAME: "Stefan Abramiuk",
             OWN_ABOUT: "Właściciel i założyciel Sempre Esperto",
             OWN_DESC1: "Posiada prawie 6 lat doświadczenia przy pracy na platfromie Salesforce",

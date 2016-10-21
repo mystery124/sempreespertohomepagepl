@@ -14,5 +14,7 @@
 
 
 $(".tee").inViewport(function(px){
-    if(px) $(this).addClass("triggeredCSS3") ;
+    if(px){
+      $(this).addClass("triggeredCSS3");
+    }
 });
