@@ -121,9 +121,9 @@
 
                                 <div class="portfolio-item">
                                     <ul >
-                                        <li in-view="visible(1, $inview, $inviewpart)">Dostarczamy oprogramowanie CRM dostowane do wymagań klienta</li>
-                                        <li in-view="visible(2, $inview, $inviewpart)">Doradzamy oraz pomagamy wybrać najlesze podejście</li>
-                                        <li in-view="visible(3, $inview, $inviewpart)">Prowadzimy szkolenia w zakresie wykorzystania rozwiązań CRM</li>
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">Dostarczamy oprogramowanie CRM dostowane do wymagań klienta</li>
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(2, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[2]}">Doradzamy oraz pomagamy wybrać najlesze podejście</li>
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(3, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[3]}">Prowadzimy szkolenia w zakresie wykorzystania rozwiązań CRM</li>
                                     </ul>
                                 </div>
    
@@ -139,8 +139,8 @@
                     <div class="col-lg-10 col-lg-offset-1">
                         <h2>{{ labels.SERV_TITLE }}</h2>
                         <hr class="small">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6">
+                        <div class="row" s>
+                            <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible(1, $inview)" ng-class="{'baboom' : services[1]}">
                                 <div class="service-item">
                                     <span class="fa-stack fa-4x">
                                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -152,7 +152,7 @@
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6">
+                            <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible(2, $inview)" ng-class="{'baboom' : services[2]}">
                                 <div class="service-item">
                                     <span class="fa-stack fa-4x">
                                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -164,7 +164,7 @@
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6">
+                            <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible(3, $inview)" ng-class="{'baboom' : services[3]}">
                                 <div class="service-item">
                                     <span class="fa-stack fa-4x">
                                     <i class="fa fa-circle fa-stack-2x"></i>
@@ -176,7 +176,7 @@
                                     <p>proces iteracyjny - gdzie aplikacja udostępniana jest w kilku krokach np. pewnych zestawów funkcjonalności w każdym kroku / lub całościowy gdzie aplikacja jest udostępniana z wszystkimi funkcjonalnościami na raz</p>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6">
+                            <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible(4, $inview)" ng-class="{'baboom' : services[4]}">
                                 <div class="service-item">
                                     <span class="fa-stack fa-4x">
                                     <i class="fa fa-circle fa-stack-2x"></i>

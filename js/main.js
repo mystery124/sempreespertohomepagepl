@@ -55,6 +55,9 @@
             $scope.cookieConsent = $cookies.get('consent');
             $scope.cookieConsConfirmed = false;
 
+            $scope.visibleWhatWeDo = [];
+            $scope.services = [];
+
             $scope.labels = labels;
             $scope.links = config.links;
             $scope.version = config.version;
@@ -64,10 +67,12 @@
                 $cookies.put('consent', true, { expires: expiryDate });
             }
 
-            $scope.visible = function(id, inview, inviewpart){
-                console.log(id);
-                console.log(inview);
-                console.log(inviewpart);
+            $scope.visibleWhatWeDoVisible = function(id, inview){
+                $scope.visibleWhatWeDo[id] = inview;
+            }
+
+            $scope.servicesVisible = function(id, inview){
+                $scope.services[id] = inview;
             }
     }]);
 
