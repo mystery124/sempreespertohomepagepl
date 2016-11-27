@@ -273,12 +273,11 @@ background-color: black;
 
 .portfolio {
     padding: 50px 0;
+    background-image: url(../img/callout.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-
+    background-size: cover;
 }
 
 .portfolio-item {
@@ -744,4 +743,35 @@ footer {
   100% {
     -ms-transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
   }
+}
+
+img {
+    max-width: 100%;
+}
+
+.animate {
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+.zoom {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.overlay.show {
+    background-color: rgba(255, 255, 255, 0.9);
 }
