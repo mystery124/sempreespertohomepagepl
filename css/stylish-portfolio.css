@@ -273,7 +273,7 @@ background-color: black;
 
 .portfolio {
     padding: 50px 0;
-    background-image: url(../img/callout.jpg);
+    background-color: #f4f4f4;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
