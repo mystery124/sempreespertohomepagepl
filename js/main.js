@@ -40,6 +40,10 @@
             SKYPE_LINK: "skype:abramiuk.stefan?chat",
             GPLUS_LINK: "https://plus.google.com/u/3/108473935326169165534"
         },
+        settings : {
+            ORG_ID : "00D58000000KqWU",
+            RET_URL: "http://www.sempreesperto.com?requestSent=1"
+        },
         version : "ver 1.5.1"
     };
 
@@ -55,25 +59,29 @@
             $scope.cookieConsent = $cookies.get('consent');
             $scope.cookieConsConfirmed = false;
 
-            $scope.visibleWhatWeDo = [];
-            $scope.services = [];
+            $scope.visibleWhatWeDo = false;
+            $scope.visibleServices = false;
+            $scope.visibleProducts = false;
 
             $scope.labels = labels;
             $scope.links = config.links;
+            $scope.settings = config.settings;
             $scope.version = config.version;
 
             $scope.confirmCookie = function(){
                 $scope.cookieConsConfirmed = true;
                 $cookies.put('consent', true, { expires: expiryDate });
-            }
+            };
 
-            $scope.visibleWhatWeDoVisible = function(id, inview){
-                $scope.visibleWhatWeDo[id] = inview;
-            }
-
-            $scope.servicesVisible = function(id, inview){
-                $scope.services[id] = inview;
-            }
+            $scope.visibleWhatWeDoVisible = function(){
+                $scope.visibleWhatWeDo = true;
+            };
+            $scope.servicesVisible = function(){
+                $scope.visibleServices = true;
+            };
+            $scope.productsVisible = function(){
+                $scope.visibleProducts = true;
+            };
     }]);
 
     myApp.directive("showOnceBackgroundLoaded", [function () {

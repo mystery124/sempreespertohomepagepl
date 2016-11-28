@@ -121,13 +121,13 @@
 
                                 <div class="portfolio-item">
                                     <ul >
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible()" ng-class="{'bounceIn1' : visibleWhatWeDo}">
                                             {{ labels.REQUIREMENTS }}
                                         </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(2, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[2]}">
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible()" ng-class="{'bounceIn2' : visibleWhatWeDo}">
                                             {{ labels.APPROACH }}
                                         </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(3, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[3]}">
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible()" ng-class="{'bounceIn3' : visibleWhatWeDo}">
                                             {{ labels.TRENING }}
                                         </li>
                                     </ul>
@@ -146,12 +146,12 @@
                         <h2>{{ labels.SERV_TITLE }}</h2>
                         <hr class="small">
                         <div class="row" s>
-                            <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible(1, $inview)" ng-class="{'baboom' : services[1]}">
+                            <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible()" ng-class="{'baboom' : visibleServices}">
                                 <div class="service-item">
                                     <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-sitemap  fa-stack-1x text-primary"></i>
-                                </span>
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-sitemap  fa-stack-1x text-primary"></i>
+                                    </span>
                                     <h4>
                                         <strong>{{ labels.BUSIN_ANALYST }}</strong>
                                     </h4>
@@ -160,12 +160,12 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible(2, $inview)" ng-class="{'baboom' : services[2]}">
+                            <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible()" ng-class="{'baboom' : visibleServices}">
                                 <div class="service-item">
                                     <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-cogs fa-stack-1x text-primary"></i>
-                                </span>
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-cogs fa-stack-1x text-primary"></i>
+                                    </span>
                                     <h4>
                                         <strong>{{ labels.TECH_ARCH }}</strong>
                                     </h4>
@@ -174,12 +174,12 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible(3, $inview)" ng-class="{'baboom' : services[3]}">
+                            <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible()" ng-class="{'baboom' : visibleServices}">
                                 <div class="service-item">
                                     <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-code fa-stack-1x text-primary"></i>
-                                </span>
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-code fa-stack-1x text-primary"></i>
+                                    </span>
                                     <h4>
                                         <strong>{{ labels.DEV }}</strong>
                                     </h4>
@@ -188,12 +188,12 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible(4, $inview)" ng-class="{'baboom' : services[4]}">
+                            <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible()" ng-class="{'baboom' : visibleServices}">
                                 <div class="service-item">
                                     <span class="fa-stack fa-4x">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-check-square-o fa-stack-1x text-primary"></i>
-                                </span>
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-check-square-o fa-stack-1x text-primary"></i>
+                                    </span>
                                     <h4>
                                         <strong>{{ labels.QA }}</strong>
                                     </h4>
@@ -226,7 +226,7 @@
                     <div class="col-md-6" >
                                 <div class="portfolio-item">
                                     <ul >
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                        <li class="visibleWhatWeDoItem" in-view="productsVisible()" ng-class="{'bounceIn3' : visibleProducts}">
                                              <h4>
                                                 <strong>{{ labels.SALES }}</strong>
                                             </h4>
@@ -234,7 +234,7 @@
                                                 {{ labels.SALES_DESC }}
                                             </p>
                                         </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                        <li class="visibleWhatWeDoItem" in-view="productsVisible()" ng-class="{'bounceIn3' : visibleProducts}">
                                              <h4>
                                                 <strong>{{ labels.SERVICE }}</strong>
                                             </h4>
@@ -242,7 +242,7 @@
                                                 {{ labels.SERVICE_DESC }}
                                             </p>
                                         </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                        <li class="visibleWhatWeDoItem" in-view="productsVisible()" ng-class="{'bounceIn3' : visibleProducts}">
                                              <h4>
                                                 <strong>{{ labels.MARKETING }}</strong>
                                             </h4>
@@ -250,7 +250,7 @@
                                                 {{ labels.MARKETING_DESC }}
                                             </p>
                                         </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                        <li class="visibleWhatWeDoItem" in-view="productsVisible()" ng-class="{'bounceIn3' : visibleProducts}">
                                              <h4>
                                                 <strong>{{ labels.COMMUNITY }}</strong>
                                             </h4>
@@ -264,7 +264,7 @@
                     <div class="col-md-6" >
                                 <div class="portfolio-item">
                                     <ul >
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                        <li class="visibleWhatWeDoItem" in-view="productsVisible()" ng-class="{'bounceIn1' : visibleProducts}">
                                              <h4>
                                                 <strong>{{ labels.ANALITICS }}</strong>
                                             </h4>
@@ -272,7 +272,7 @@
                                                 {{ labels.ANALITICS_DESC }}
                                             </p>
                                         </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                        <li class="visibleWhatWeDoItem" in-view="productsVisible()" ng-class="{'bounceIn1' : visibleProducts}">
                                              <h4>
                                                 <strong>{{ labels.APPS }}</strong>
                                             </h4>
@@ -280,7 +280,7 @@
                                                 {{ labels.APPS_DESC }}
                                             </p>
                                         </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                        <li class="visibleWhatWeDoItem" in-view="productsVisible()" ng-class="{'bounceIn1' : visibleProducts}">
                                              <h4>
                                                 <strong>{{ labels.IOT }}</strong>
                                             </h4>
@@ -288,7 +288,7 @@
                                                 {{ labels.IOT_DESC }}
                                             </p>
                                         </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                        <li class="visibleWhatWeDoItem" in-view="productsVisible()" ng-class="{'bounceIn1' : visibleProducts}">
                                              <h4>
                                                 <strong>{{ labels.COMMERCE }}</strong>
                                             </h4>
@@ -324,41 +324,43 @@
                             </div>
                         </div>
                         <div class="row" >
-                            <div class="col-md-1 col-md-offset-2 achivements">
+                            <div class="col-md-2 achivements">
                                 <a href="res/Salesforce_Certified_Force.com_Developer.pdf" target="_blank">
                                     <img class="img-responsive" src="img/cert_dev_rgb.png">
                                 </a>
                             </div>
-                            <div class="col-md-1 achivements">
+                            <div class="col-md-2 achivements">
                                 <a href="res/Salesforce_Certified_Advanced_Developer.pdf" target="_blank">
                                     <img class="img-responsive" src="img/cert_dev_adv_rgb.png">
                                 </a>
                             </div>
-                            <div class="col-md-1 achivements">
+                            <div class="col-md-2 achivements">
                                 <a href="res/Salesforce_Certified_Platform_Developer_I_II.pdf" target="_blank">
                                     <img class="img-responsive" src="img/SalesforceCertifiedPlatformDeveloperI_RGB.png">
                                 </a>
                             </div>
-                            <div class="col-md-1 achivements">
+                            <div class="col-md-2 achivements">
                                 <a href="res/Salesforce_Certified_Platform_Developer_I_II.pdf" target="_blank">
                                     <img class="img-responsive" src="img/SalesforceCertifiedPlatformDeveloperII_RGB.png">
                                 </a>
                             </div>
-                            <div class="col-md-1 achivements">
+                            <div class="col-md-2 achivements">
                                 <a href="res/Salesforce_Certified_Administrator.pdf" target="_blank">
                                     <img class="img-responsive" src="img/cert_admin_rgb.png">
                                 </a>
                             </div>
-                             <div class="col-md-1 achivements">
+                            <div class="col-md-2 achivements">
                                 <a href="https://developer.salesforce.com/forums/ForumsTrailheadProfile?userId=005F0000006vuRRIAY" target="_blank">
                                     <img class="img-responsive" src="img/trailhead-flogo.png">
                                 </a>
                             </div>
-                            <div class="col-md-1 achivements">
+                            <!--
+                            <div class="col-md-2 achivements">
                                 <a href="res/OCP.pdf" target="_blank">
                                     <img class="img-responsive"  src="img/ocp.jpg">
                                 </a>
                             </div>
+                            -->
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-12 achivements">
@@ -372,7 +374,7 @@
         </section>
 
         <!-- Map -->
-        <section id="contact" >
+        <section id="contact" class="contact">
             <div class="container">
                 <div >
                     <div class="t text-center">
@@ -381,7 +383,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-5 col-sm-12 col-xs-12 col-md-5 ">
+                    <div class="col-lg-5 col-sm-12 col-xs-12 col-md-5 companyAddress">
                         <h4><strong>{{ labels.FULL_NAME }}</strong>
                         </h4>
                         <p>{{ labels.ADDR1 }}<br>{{ labels.ADDR2 }}</p>
@@ -416,8 +418,8 @@
 
                         <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-                            <input type=hidden name="oid" value="00D58000000KqWU">
-                            <input type=hidden name="retURL" value="http://www.sempreesperto.com?requestSent=1">
+                            <input type=hidden name="oid" value="{{settings.ORG_ID}}">
+                            <input type=hidden name="retURL" value="{{ settings.RET_URL }}">
 
                             <!--  ----------------------------------------------------------------------  -->
                             <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
