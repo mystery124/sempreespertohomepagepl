@@ -243,6 +243,7 @@ background-color: black;
 
 .about {
     padding: 50px 0;
+    background-color: #f4f4f4;
 }
 
 /* Services */
@@ -273,7 +274,7 @@ background-color: black;
 
 .portfolio {
     padding: 50px 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -743,37 +744,6 @@ footer {
   100% {
     -ms-transform:  rotate(0deg) scaleX(1.20) scaleY(1.20) ;
   }
-}
-
-img {
-    max-width: 100%;
-}
-
-.animate {
-    -webkit-transition: all .5s ease-out;
-    -moz-transition: all .5s ease-out;
-    -ms-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    transition: all .5s ease-out;
-}
-
-.zoom {
-    cursor: -webkit-zoom-in;
-    cursor: zoom-in;
-}
-
-.overlay {
-    background-color: rgba(255, 255, 255, 0);
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 2;
-}
-
-.overlay.show {
-    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .portfolio .prodLogos{
