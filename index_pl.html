@@ -91,7 +91,7 @@
                             <span><a lang="en" title="English" href="/index_en.html" >EN</a> </span>
                             |
                             <span class="langActive">PL</span>
-            <!--                     |
+<!--                     |
                             <span><a lang="de" title="Deutch" href="#" ng-click="setLang('de-de');" ng-class="{'langActive': userConfig.lang == 'de-de'}">DE</a> </span> -->
                         </div>
                     </div>
@@ -116,14 +116,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-center">Czym się zajmujemy?</h2>
+                        <h2 class="text-center">{{ labels.WHAT_WE_DO }}</h2>
                         <hr class="small">
 
                                 <div class="portfolio-item">
                                     <ul >
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">Dostarczamy oprogramowanie CRM dostowane do wymagań klienta</li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(2, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[2]}">Doradzamy oraz pomagamy wybrać najlesze podejście</li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(3, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[3]}">Prowadzimy szkolenia (również bezpłatne) w zakresie wykorzystania rozwiązań CRM</li>
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                            {{ labels.REQUIREMENTS }}
+                                        </li>
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(2, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[2]}">
+                                            {{ labels.APPROACH }}
+                                        </li>
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(3, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[3]}">
+                                            {{ labels.TRENING }}
+                                        </li>
                                     </ul>
                                 </div>
    
@@ -149,7 +155,9 @@
                                     <h4>
                                         <strong>{{ labels.BUSIN_ANALYST }}</strong>
                                     </h4>
-                                    <p>Bazując na doświadczeniu pomagamy określić potrzeby klienta. Pozwala to na zebranie wymagań oraz zdefiniowanie zakresu projektu. Na tym etapie jesteśmy w stanie dokonać wstępnej wyceny projektu</p>
+                                    <p>
+                                        {{ labels.BUSIN_ANALYST_DESC }}
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible(2, $inview)" ng-class="{'baboom' : services[2]}">
@@ -161,7 +169,9 @@
                                     <h4>
                                         <strong>{{ labels.TECH_ARCH }}</strong>
                                     </h4>
-                                    <p>Bazując na stworzonej dokumentacji, a także wpsaricu klienta określamy funkcjonalności dostępne w aplikacji, oraz tworzymy jej szkielet</p>
+                                    <p>
+                                        {{ labels.TECH_ARCH_DESC }}
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible(3, $inview)" ng-class="{'baboom' : services[3]}">
@@ -173,7 +183,9 @@
                                     <h4>
                                         <strong>{{ labels.DEV }}</strong>
                                     </h4>
-                                    <p>Proces tworzenia aplikacji w przypadku technologii Salesforce nie zawsze wiąże się z pisaniem kodu. Dobrze stworzona architektura pozwala dobrać najlepszą scieżkę rozwiązania problemu.</p>
+                                    <p>
+                                        {{ labels.DEV_DESC }}
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6 baboomHelper" in-view="servicesVisible(4, $inview)" ng-class="{'baboom' : services[4]}">
@@ -185,7 +197,9 @@
                                     <h4>
                                         <strong>{{ labels.QA }}</strong>
                                     </h4>
-                                    <p>Testowanie jest chyba jednym z najważniejszych etapów. Razem z klientam dokonujemy przeglądu wszystkich funkcjonalności aplikacji a także ich poprawnego działania.</p>
+                                    <p>
+                                        {{ labels.QA_DESC }}
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -198,52 +212,143 @@
             <!-- /.container -->
         </section>
 
+        <!-- Portfolio -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>{{ labels.OUR_WORK }}</h2>
+                        <hr class="small">
+                    </div>
+                    <div class="col-md-12">
+                        <img class="img-responsive prodLogos" src="img/einstein_salesforce.jpg">
+                    </div>
+                    <div class="col-md-6" >
+                                <div class="portfolio-item">
+                                    <ul >
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                             <h4>
+                                                <strong>{{ labels.SALES }}</strong>
+                                            </h4>
+                                            <p>
+                                                {{ labels.SALES_DESC }}
+                                            </p>
+                                        </li>
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                             <h4>
+                                                <strong>{{ labels.SERVICE }}</strong>
+                                            </h4>
+                                            <p>
+                                                {{ labels.SERVICE_DESC }}
+                                            </p>
+                                        </li>
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                             <h4>
+                                                <strong>{{ labels.MARKETING }}</strong>
+                                            </h4>
+                                            <p>
+                                                {{ labels.MARKETING_DESC }}
+                                            </p>
+                                        </li>
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                             <h4>
+                                                <strong>{{ labels.COMMUNITY }}</strong>
+                                            </h4>
+                                            <p>
+                                                {{ labels.COMMUNITY_DESC }}
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                    </div>
+                    <div class="col-md-6" >
+                                <div class="portfolio-item">
+                                    <ul >
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                             <h4>
+                                                <strong>{{ labels.ANALITICS }}</strong>
+                                            </h4>
+                                            <p>
+                                                {{ labels.ANALITICS_DESC }}
+                                            </p>
+                                        </li>
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                             <h4>
+                                                <strong>{{ labels.APPS }}</strong>
+                                            </h4>
+                                            <p>
+                                                {{ labels.APPS_DESC }}
+                                            </p>
+                                        </li>
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                             <h4>
+                                                <strong>{{ labels.IOT }}</strong>
+                                            </h4>
+                                            <p>
+                                                {{ labels.IOT_DESC }}
+                                            </p>
+                                        </li>
+                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
+                                             <h4>
+                                                <strong>{{ labels.COMMERCE }}</strong>
+                                            </h4>
+                                            <p>
+                                                {{ labels.COMMERCE_DESC }}
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- About -->
         <section id="about" class="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-lg-3">
-                        <img class=" img-responsive" src="img/some_of_me2.jpg">
+                        <img class=" img-responsive" src="img/Stefan.jpg">
                     </div>
-                    <div class="col-md-6 col-lg-6 text-center">
+                    <div class="col-md-9 col-lg-9 text-center">
                         <h2>{{ labels.OWN_NAME }}</br>{{ labels.OWN_ABOUT }}</h2>
                         <p class="lead">{{ labels.OWN_DESC1 }} <br/>
                             {{ labels.OWN_DESC2 }}
                         </p>
                     </div>
-                    <div class="col-md-3 col-lg-3 achivements">
+                    <div class="col-md-12 col-lg-12 achivements">
                         <div class="row" >
-                            <div class="col-md-6 col-lg-6 achivements">
+                            <div class="col-md-3 achivements">
                                 <a href="res/Salesforce_Certified_Force.com_Developer.pdf" target="_blank">
                                     <img class="img-responsive" src="img/cert_dev_rgb.png">
                                 </a>
                             </div>
-                            <div class="col-md-6 col-lg-6 achivements">
+                            <div class="col-md-3 achivements">
                                 <a href="res/Salesforce_Certified_Advanced_Developer.pdf" target="_blank">
                                     <img class="img-responsive" src="img/cert_dev_adv_rgb.png">
                                 </a>
                             </div>
-                            <div class="col-md-6 col-lg-6 achivements">
+                            <div class="col-md-3 achivements">
                                 <a href="res/Salesforce_Certified_Platform_Developer_I_II.pdf" target="_blank">
                                     <img class="img-responsive" src="img/SalesforceCertifiedPlatformDeveloperI_RGB.png">
                                 </a>
                             </div>
-                            <div class="col-md-6 col-lg-6 achivements">
+                            <div class="col-md-3 achivements">
                                 <a href="res/Salesforce_Certified_Platform_Developer_I_II.pdf" target="_blank">
                                     <img class="img-responsive" src="img/SalesforceCertifiedPlatformDeveloperII_RGB.png">
                                 </a>
                             </div>
-                            <div class="col-md-6 col-lg-6 achivements">
+                            <div class="col-md-3 achivements">
                                 <a href="res/Salesforce_Certified_Administrator.pdf" target="_blank">
                                     <img class="img-responsive" src="img/cert_admin_rgb.png">
                                 </a>
                             </div>
-                             <div class="col-md-6 col-lg-6 achivements">
+                             <div class="col-md-3 achivements">
                                 <a href="https://developer.salesforce.com/forums/ForumsTrailheadProfile?userId=005F0000006vuRRIAY" target="_blank">
                                     <img class="img-responsive" src="img/trailhead-flogo.png">
                                 </a>
                             </div>
-                            <div class="col-md-6 col-lg-6 achivements">
+                            <div class="col-md-3 achivements">
                                 <a href="res/OCP.pdf" target="_blank">
                                     <img class="img-responsive"  src="img/ocp.jpg">
                                 </a>
@@ -257,83 +362,6 @@
             <!-- /.container -->
         </section>
 
-
-
-        <!-- Portfolio -->
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2>{{ labels.OUR_WORK }}</h2>
-                        <hr class="small">
-                    </div>
-                    <div class="col-md-12">
-                        <img class="img-responsive"  src="img/einstein_salesforce.jpg">
-                    </div>
-                    <div class="col-md-6" >
-                                <div class="portfolio-item">
-                                    <ul >
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
-                                             <h4>
-                                                <strong>Sales</strong>
-                                            </h4>
-                                            <p>The #1 CRM solution takes sales force automation to new heights, with an array of cloud-based tools that give your team the power to score more wins, increase productivity, and keep the pipeline filled with solid leads. No software. No hardware. No speed limits.</p>
-                                        </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
-                                             <h4>
-                                                <strong>Service</strong>
-                                            </h4>
-                                            <p>From call-center software to self-service portals, our service solutions enhance your customer service with more responsive, more intuitive, more flexible support that anticipates customer needs.</p>
-                                        </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
-                                             <h4>
-                                                <strong>Marketing</strong>
-                                            </h4>
-                                            <p>Make the most of every customer interaction — creating personalized, cross-channel customer journeys that deliver exceptional brand experiences across email, mobile, social, Web, and more.</p>
-                                        </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
-                                             <h4>
-                                                <strong>Community</strong>
-                                            </h4>
-                                            <p>Harness the power of social and mobile to create lively communities for rich customer engagement, employee collaboration: and alignment with resellers, partners, and distributors.</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                    </div>
-                    <div class="col-md-6" >
-                                <div class="portfolio-item">
-                                    <ul >
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
-                                             <h4>
-                                                <strong>Analytics</strong>
-                                            </h4>
-                                            <p>With Analytics Cloud, drill down into any dataset, get instant answers, and collaborate with your team on any device, from anywhere. All at speeds that no other analytics solution can deliver.</p>
-                                        </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
-                                             <h4>
-                                                <strong>Apps</strong>
-                                            </h4>
-                                            <p>Today every company is in the app business. App Cloud is your one-stop shop for building, running, managing, and optimizing apps using the same technology and expertise that fuels our success.</p>
-                                        </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
-                                             <h4>
-                                                <strong>Internet of Things</strong>
-                                            </h4>
-                                            <p>Proactively engage your customers by connecting the internet of things with your most important customer data for more meaningful real-time actions. Connect any device, sensor, product, website, and event stream.</p>
-                                        </li>
-                                        <li class="visibleWhatWeDoItem" in-view="visibleWhatWeDoVisible(1, $inview)" ng-class="{'bounceIn' : visibleWhatWeDo[1]}">
-                                             <h4>
-                                                <strong>Commerce</strong>
-                                            </h4>
-                                            <p>Unify the customer experience across all points of commerce (web, social, mobile, store, and more) — from shopping to fulfillment to customer service — with built-in predictive intelligence that delivers a 1-to-1 shopping experience.</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Map -->
         <section id="contact" >
             <div class="container">
@@ -344,7 +372,26 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-7 col-sm-7 col-xs-7 col-md-7">
+                    <div class="col-lg-5 col-sm-12 col-xs-12 col-md-5 ">
+                        <h4><strong>{{ labels.FULL_NAME }}</strong>
+                        </h4>
+                        <p>{{ labels.ADDR1 }}<br>{{ labels.ADDR2 }}</p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fa fa-envelope-o fa-fw"></i><a class="mail" target="_blank" ng-href="mailto:{{ links.EMAIL }}">{{ links.EMAIL }}</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <ul class="social-network social-circle ">
+                            <li><a ng-href="{{ links.FB_LINK }}" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a ng-href="{{ links.SKYPE_LINK }}" target="_blank" class="icoSkype" title="Twitter"><i class="fa fa-skype"></i></a></li>
+                            <li><a ng-href="{{ links.GPLUS_LINK }}" target="_blank" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a ng-href="{{ links.LINKED_LINK }}" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin-square"></i></a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-lg-7 col-sm-12 col-xs-12 col-md-7">
 
                         <!--  ----------------------------------------------------------------------  -->
                         <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
@@ -371,67 +418,45 @@
                             <!--  value="sempre.esperto.it+sfdc@gmail.com">                               -->
                             <!--  ----------------------------------------------------------------------  -->
 
-  <div class="form-group">
-    <label for="first_name">First Name</label>
-    <input class="form-control id="first_name" maxlength="40" name="first_name" size="20" type="text" />
-  </div>
+                            <div class="form-group">
+                                <label for="first_name">{{ labels.FIRST_NAME }}</label>
+                                <input class="form-control" id="first_name" maxlength="80" name="first_name" size="20" type="text" />
+                            </div>
 
-  <div class="form-group">
-    <label for="first_name">First Name</label>
-    <input class="form-control id="first_name" maxlength="40" name="first_name" size="20" type="text" />
-  </div>
+                            <div class="form-group">
+                                <label for="last_name">{{ labels.LAST_NAME }}</label>
+                                <input class="form-control" id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+                            </div>
 
-    <div class="form-group">
-    <label for="first_name">First Name</label>
-    <input class="form-control id="first_name" maxlength="40" name="first_name" size="20" type="text" />
-  </div>
+                            <div class="form-group">
+                                <label for="email">{{ labels.EMAIL }}</label>
+                                <input class="form-control" id="email" maxlength="80" name="email" size="20" type="text" />
+                            </div>
 
-    <div class="form-group">
-    <label for="first_name">First Name</label>
-    <input class="form-control id="first_name" maxlength="40" name="first_name" size="20" type="text" />
-  </div>
-                            <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+                            <div class="form-group">
+                                <label for="company">{{ labels.COMPANY }}</label>
+                                <input class="form-control" id="company" maxlength="40" name="company" size="20" type="text" />
+                            </div>
 
-                            <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+                            <div class="form-group">
+                                <label for="city">{{ labels.CITY }}</label>
+                                <input class="form-control" id="city" maxlength="40" name="city" size="20" type="text" />
+                            </div>
 
-                            <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+                            <div class="form-group">
+                                <label for="phone">{{ labels.PHONE }}</label>
+                                <input class="form-control" id="phone" maxlength="40" name="phone" size="20" type="text" />
+                            </div>
 
-                            <label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+                            <div class="form-group">
+                                <label for="description">{{ labels.DESCRIPTION }}</label>
+                                <textarea class="form-control" id="description" ></textarea>
+                            </div>
 
-                            <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
 
-                            <label for="description">Description</label><textarea name="description"></textarea><br>
-
-                            <input type="submit" name="submit">
+                            <input type="submit" name="submit" class="btn btn-primary">
 
                         </form>
-
-
-                    </div>
-                    <div class="col-lg-5 col-sm-5 col-xs-5 col-md-5 ">
-                        <h4><strong>{{ labels.FULL_NAME }}</strong>
-                        </h4>
-                        <p>{{ labels.ADDR1 }}<br>{{ labels.ADDR2 }}</p>
-                        <ul class="list-unstyled">
-                            <li>
-                                <i class="fa fa-envelope-o fa-fw"></i><a class="mail" target="_blank" ng-href="mailto:{{ links.EMAIL }}">{{ links.EMAIL }}</a>
-                            </li>
-                        </ul>
-                        <br>
-                        <ul class="social-network social-circle visible-md-inline visible-lg-inline .hidden-xs .hidden-sm">
-                            <li><a ng-href="{{ links.FB_LINK }}" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a ng-href="{{ links.SKYPE_LINK }}" target="_blank" class="icoSkype" title="Twitter"><i class="fa fa-skype"></i></a></li>
-                            <li><a ng-href="{{ links.GPLUS_LINK }}" target="_blank" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a ng-href="{{ links.LINKED_LINK }}" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin-square"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 visible-xs-block visible-sm-block text-center .hidden-md .hidden-lg">
-                        <ul class="social-network social-circle">
-                            <li><a ng-href="{{ links.FB_LINK }}" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a ng-href="{{ links.SKYPE_LINK }}" target="_blank" class="icoSkype" title="Twitter"><i class="fa fa-skype"></i></a></li>
-                            <li><a ng-href="{{ links.GPLUS_LINK }}" target="_blank" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a ng-href="{{ links.LINKED_LINK }}" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin-square"></i></a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
