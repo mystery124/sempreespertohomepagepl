@@ -394,7 +394,7 @@ footer {
     bottom: 0;
     right: 0;
     background: #000;
-    opacity: 0.6;
+    opacity: 0.95;
     z-index: 9999999;
     transition: all linear 1s;
 }
