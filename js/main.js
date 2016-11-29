@@ -39,8 +39,8 @@
             LINKED_LINK: "https://www.linkedin.com/company/sempre-esperto",
             SKYPE_LINK: "skype:abramiuk.stefan?chat",
             GPLUS_LINK: "https://plus.google.com/u/3/108473935326169165534",
-            ENGLISH_VER: "en.sempreesperto.com",
-            POLISH_VER: "pl.sempreesperto.com"
+            ENGLISH_VER: "http://en.sempreesperto.com",
+            POLISH_VER: "http://pl.sempreesperto.com"
         },
         settings : {
             ORG_ID : "00D58000000KqWU",
