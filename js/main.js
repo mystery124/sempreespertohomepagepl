@@ -34,11 +34,13 @@
             }
         },
         links : {
-            EMAIL: "sempre.esperto.it@gmail.com",
-            FB_LINK : "https://pl-pl.facebook.com/people/Stefan-Abramiuk/100010261149125",
-            LINKED_LINK: "https://www.linkedin.com/in/stefan-abramiuk-95827b43?trk=hp-identity-name",
+            EMAIL: "info@sempreesperto.com",
+            FB_LINK : "https://www.facebook.com/sempreesperto",
+            LINKED_LINK: "https://www.linkedin.com/company/sempre-esperto",
             SKYPE_LINK: "skype:abramiuk.stefan?chat",
-            GPLUS_LINK: "https://plus.google.com/u/3/108473935326169165534"
+            GPLUS_LINK: "https://plus.google.com/u/3/108473935326169165534",
+            ENGLISH_VER: "en.sempreesperto.com",
+            POLISH_VER: "pl.sempreesperto.com"
         },
         settings : {
             ORG_ID : "00D58000000KqWU",

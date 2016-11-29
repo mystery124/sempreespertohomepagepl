@@ -70,10 +70,16 @@
                     <a href="#top" onclick = $("#menu-close").click(); >{{ labels.HOME }}</a>
                 </li>
                 <li>
-                    <a href="#about" onclick = $("#menu-close").click(); >{{ labels.ABOUT }}</a>
+                    <a href="#sfdc" onclick = $("#menu-close").click(); >{{ labels.WHAT_WE_DO }}</a>
+                </li>
+                <li>
+                    <a href="#services" onclick = $("#menu-close").click(); >{{ labels.SERV_TITLE }}</a>
                 </li>
                 <li>
                     <a href="#portfolio" onclick = $("#menu-close").click(); >{{ labels.OUR_WORK }}</a>
+                </li>
+                <li>
+                    <a href="#about" onclick = $("#menu-close").click(); >{{ labels.ABOUT }}</a>
                 </li>
                 <li>
                     <a href="#contact" onclick = $("#menu-close").click(); >{{ labels.CONTACT }}</a>
@@ -88,7 +94,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2 col-lg-2 col-sm-12 col-xs-12 langSelector">
-                            <span><a lang="en" title="English" href="/index_en.html" >EN</a> </span>
+                            <span><a lang="en" title="English" ng-href="{{ links.ENGLISH_VER }}" >EN</a> </span>
                             |
                             <span class="langActive">PL</span>
 <!--                     |
@@ -373,7 +379,6 @@
             <!-- /.container -->
         </section>
 
-        <!-- Map -->
         <section id="contact" class="contact">
             <div class="container">
                 <div >
