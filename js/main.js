@@ -92,17 +92,42 @@
         scope: false,
         link: function (scope, element, attributes) {
           element.addClass("ng-hide");
-          var image = new Image();
-          image.onload = function () {
-            // the image must have been cached by the browser, so it should load quickly
-            scope.$apply(function () {
-              //element.css({ background: 'url("' + attributes.showOnceBackgroundLoaded + '") no-repeat center center scroll' });
-              element.addClass('headerBackgroud');
-              element.removeClass("ng-hide");
-              scope.loaded = true;
-            });
-          };
-          image.src = attributes.showOnceBackgroundLoaded;
+
+          if(attributes.showOnceBackgroundLoadedLowres){
+              var image1 = new Image();
+              image1.onload = function () {
+                // the image must have been cached by the browser, so it should load quickly
+                scope.$apply(function () {
+                    //element.css({ background: 'url("' + attributes.showOnceBackgroundLoaded + '") no-repeat center center scroll' });
+                    element.addClass('headerBackgroudLowRes');
+                    element.removeClass("ng-hide");
+                    scope.loaded = true;
+
+                    var image2 = new Image();
+                    image2.onload = function () {
+                        // the image must have been cached by the browser, so it should load quickly
+                        scope.$apply(function () {
+                            //element.css({ background: 'url("' + attributes.showOnceBackgroundLoaded + '") no-repeat center center scroll' });
+                            element.addClass('headerBackgroud');
+                        });
+                    };
+                    image2.src = attributes.showOnceBackgroundLoaded;
+                });
+              };
+              image1.src = attributes.showOnceBackgroundLoadedLowres;
+          } else {
+              var image = new Image();
+              image.onload = function () {
+                // the image must have been cached by the browser, so it should load quickly
+                scope.$apply(function () {
+                  //element.css({ background: 'url("' + attributes.showOnceBackgroundLoaded + '") no-repeat center center scroll' });
+                  element.addClass('headerBackgroud');
+                  element.removeClass("ng-hide");
+                  scope.loaded = true;
+                });
+              };
+              image.src = attributes.showOnceBackgroundLoaded;
+            }
         }
       };
     }]);
