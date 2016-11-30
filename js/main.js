@@ -108,7 +108,6 @@
                         // the image must have been cached by the browser, so it should load quickly
                         scope.$apply(function () {
                             //element.css({ background: 'url("' + attributes.showOnceBackgroundLoaded + '") no-repeat center center scroll' });
-                            element.removeClass('headerBackgroudLowRes');
                             element.addClass('headerBackgroud');
                         });
                     };
