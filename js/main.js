@@ -109,6 +109,7 @@
                         scope.$apply(function () {
                             //element.css({ background: 'url("' + attributes.showOnceBackgroundLoaded + '") no-repeat center center scroll' });
                             element.addClass('headerBackgroud');
+                            element.removeClass("headerBackgroudLowRes");
                         });
                     };
                     image2.src = attributes.showOnceBackgroundLoaded;
