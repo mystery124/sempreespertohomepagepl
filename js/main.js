@@ -44,11 +44,31 @@
         },
         settings : {
             ORG_ID : "00D58000000KqWU",
-            RET_URL: "http://www.sempreesperto.com?requestSent=1"
+            RET_URL: "http://pl.sempreesperto.com?requestSent=1"
         },
         version : "ver 1.5.1"
     };
 
+	
+	var correctCaptcha = function(response) {
+		if(response){
+			var button = document.createElement("input");
+			button.type="submit";
+			button.id="webtolead";
+			button.name="submit";
+			button.className="btn btn-primary";
+			var formElement = document.getElementById("component");
+			formElement.appendChild(button);
+		}
+	};
+	
+	var captchaExpired = function(response) {
+		var button = document.getElementById("webtolead");
+		if(button){
+			button.remove();
+		}
+	}
+	
     var myApp = angular.module('homepage',['ngCookies', 'ngAnimate', 'angular-parallax', 'angular-inview']);
     
     myApp.config( ['$compileProvider',function( $compileProvider ){

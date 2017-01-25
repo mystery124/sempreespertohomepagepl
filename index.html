@@ -471,12 +471,11 @@
 
                             <div class="form-group">
                                 <label for="description">{{ labels.DESCRIPTION }}</label>
-                                <textarea class="form-control" id="description" ></textarea>
+                                <textarea class="form-control" id="description"  name="description" ></textarea>
                             </div>
-
-
-                            <input type="submit" name="submit" class="btn btn-primary">
-
+							<div id="component" >
+								<div class="g-recaptcha" data-sitekey="6LfQ_RIUAAAAAPsBPKDXsNUqjUL8Yzx7r9Q4kEBo" data-callback="correctCaptcha" data-expired-callback="captchaExpired" ></div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -534,4 +533,5 @@
 
     <script src="js/pl.js"></script>
 
+	<script src='https://www.google.com/recaptcha/api.js?hl=pl' async defer ></script>
 </html>
