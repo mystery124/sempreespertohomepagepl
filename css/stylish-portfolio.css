@@ -224,6 +224,18 @@ hr.small {
     -o-background-size: cover;
 }
 
+.headerBackgroudLowRes{
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/raw1lowres.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 /* SFDC 
 background-color: black;
 */
